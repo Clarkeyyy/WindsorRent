@@ -1,0 +1,110 @@
+
+
+.body{
+    background-color:white;
+}
+/*Header*/
+.titlehead{
+    text-align:center;
+    font-size:30px;
+    color:#10bead;
+}
+/*Flexbox to structure the layout*/
+.choices{
+    margin: 0 70px 0 70px;
+    display:flex;
+    flex-direction: column;
+
+}
+.columns{
+    padding:20px;
+    margin-bottom:20px;
+    flex-basis:30%;
+    display:flex;
+    justify-content:space-between;
+}
+@media (max-width:900px){ /*Will push services to row below on mobile*/
+    .columns{
+        flex-wrap: wrap;
+    }
+
+}
+
+.column1, .column2{
+    margin:20px;
+    box-shadow: 1px 1px 8px #888888;
+    display:flex;
+    flex-direction: column;
+    background-color:#F8F8F8;
+
+}
+/*Styling the content*/
+.content{
+    padding: 0 15px 15px 15px;
+    font-family: "Roboto", sans-serif;
+    flex-grow:1;
+    margin-top:0;
+}
+.title1,.title2,.content{
+    font-size:20px;
+    line-height:30px;
+}
+.title1,.title2{
+    text-align:center;
+    padding:10px;
+    color:white;
+    font-family: "Montserrat", sans-serif;
+}
+.title1{
+    background-color:#e8d953;
+}
+.title2{
+    background-color:#10bead;
+}
+
+/*images*/
+.img{
+    width:66.6%;
+    margin:auto;
+}
+/*Buttons*/
+.button{
+    background-color:#eddf44;
+}
+.button {
+  border-radius: 4px;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor:pointer;
+  margin: 10px auto;
+
+
+}
+
+.button span{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color:white;
+  font-size:18px;
+}
+
+.button span:after{
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span{
+  padding-right: 25px;
+}
+
+.button:hover span:after{
+  opacity: 1;
+  right: 0;
+}

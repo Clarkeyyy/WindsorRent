@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Leasing Agent Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id ="calculator">
+	      	<div class="inputs">
+		        <div id="property_type">
+		          <select class="selectdiv" id="property_type_select">
+		          	<option value="-1">select your type of property</option>
+		          	<option value="apartment">apartment</option>
+		          	<option value="house">house</option>
+					<option value="room rental">room rental</option>
+				</select>
+		        </div>
+			<!--<div id="amount_of_rooms"> -->
+				<select class="selectdiv" id ="amount_of_rooms">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			<!--</div>-->
+		        <div  id="rentalpricediv">
+		          <input class="selectdiv" type="number" id="rental_price" placeholder="Total Rent Amount">
+		        </div>
+		        <div id="calculate">
+		          <button id="button">Calculate me</button>
+		        </div>
+	      	</div>
+	      <div class="outputs">
+			<h3>BASIC</h3>
+	        <div id="total1"></div>
+			<h3>PRO</h3>
+			<div id="total2"></div>
+	    </div>
+		<div id="probuttons">
+			<div class="pro" id="pro_add">+</div>
+			<div class="pro" id="pro_sub">-</div>
+		</div>
+		<div id="leasing-agent-information">
+			<nav>
+			  <ul class="drop-down closed">
+				<li><a href="#" class="nav-button">Onboarding</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Library</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>
+			</nav>
+			<nav>
+			  <ul class="drop-down closed">
+				<li><a href="#" class="nav-button">Pre Screening</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Library</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>
+			</nav>
+			<nav>
+			  <ul class="drop-down closed">
+				<li><a href="#" class="nav-button">Signing</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Library</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>
+			</nav>
+		</div>
+    </div>
+  </body>
+</html>

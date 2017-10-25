@@ -1,0 +1,118 @@
+
+
+
+/*This is for mobile*/
+@media (min-width: 600px) {
+    #heroheader{
+        background-image: url(https://windsorrent.ca/wp-content/uploads/2017/10/Windsor-Ontario-background.jpg);
+        background-image: url(http://www.citywindsor.ca/visitors/PublishingImages/visiting-windsor-downtown-panorama.jpg);
+        background-size: cover;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: -10px;
+    }
+    #divbutons{
+        flex-direction: column;
+    }
+    #background-image{
+        margin:auto;
+        text-align: center;
+        background: rgba(16,190,173,0.8);
+        max-width: 800px;
+        max-height:500px;
+        border: 2px solid black;
+        box-shadow: 5px 10px 5px #888888;
+    }
+    #subtitle{
+        padding-top:80px;
+        color:white;
+
+    }
+    #hero2{
+        color:white;
+    }
+    #hero1{
+        margin:50px 30px  0 30px;
+        font-size:50px;
+        color:white;
+    }
+    #divbuttons{
+            padding:20px;
+            display: flex;
+            justify-content: space-around;
+    }
+    .menubuttons{
+        background-color:gold;
+        color:#222;
+        padding:20px 40px;
+        cursor:pointer;
+        font-size: 20px;
+        border-bottom: 4px solid #d99221;
+        background:#f3bc65;
+    }
+    .menubuttons:hover{
+        border-bottom: 4px solid #d8d3b8;
+    }
+}
+@media (max-width: 600px) {
+    #heroheader{
+        background-image: url(https://windsorrent.ca/wp-content/uploads/2017/10/Windsor-Ontario-background.jpg);
+        background-size: cover: url();
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #divbutons{
+        display:flex;
+        flex-direction: row;
+    }
+    #background-image{
+        margin:auto;
+        text-align: center;
+        background: rgba(16,190,173,0.8);
+        max-width:600px;
+        max-height:800px;
+        border: 2px solid black;
+        box-shadow: 5px 10px 5px #888888;
+
+    }
+    #subtitle{
+        padding-top:30px;
+        color:white;
+        font-size:20px;
+
+    }
+    #hero2{
+        color:white;
+    }
+    #hero1{
+        margin-top:20px;
+        font-size:30px;
+        color:white;
+    }
+    #divbuttons{
+            padding:10px;
+            display: flex;
+            margin: 0 30px;
+            justify-content: space-around;
+            flex-direction: column;
+    }
+    .menubuttons{
+        background-color:gold;
+        color:#222;
+        padding:20px 10px;
+        margin:10px;
+        cursor:pointer;
+        font-size: 20px;
+        border-bottom: 4px solid #d99221;
+        background:#f3bc65;
+    }
+    .menubuttons:hover{
+        border-bottom: 4px solid #d8d3b8;
+    }
+}
